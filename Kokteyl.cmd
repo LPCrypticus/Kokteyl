@@ -1,5 +1,5 @@
 :: Starting Parameters
-@echo off & color a & chcp 1254 & mode con: cols=55 lines=9 & title Kokteyl & cls
+@echo off & bgcolor(a) & chcp 1254 & mode con: cols=55 lines=9 & title Kokteyl & cls
 
 :: Run As Administrator
 >nul reg add hkcu\Software\classes\.Admin\shell\runas\command /f /ve /d "cmd /x /d /r set \"f0=%%2\" &call \"%%2\" %%3" &set _= %*
